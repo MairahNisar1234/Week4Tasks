@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(180, 52%, 96%);
+  --foreground: hsl(180, 14%, 20%);
+  --primary: hsl(180, 29%, 50%);
+  /* Custom color variables */
+  --filter-bg: hsl(180, 31%, 95%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --filter-bg: hsl(240, 5%, 15%);
+}
+
+@layer components {
+  .job-card {
+    @apply bg-white dark:bg-zinc-900 
+           shadow-md dark:shadow-2xl dark:shadow-black/50
+           rounded-lg p-6 flex flex-col md:flex-row items-center justify-between
+           border-l-[6px] border-[hsl(180,29%,50%)] transition-all duration-300
+           relative z-0;
+  }
+
+  .filter-container {
+    @apply bg-white dark:bg-zinc-800 
+           shadow-xl rounded-lg p-5 -mt-10 
+           flex justify-between items-center transition-colors
+           relative z-10; 
+  }
+
+  .tag {
+    /* Changed the bg- class to use the CSS variable */
+    background-color: var(--filter-bg);
+    @apply text-[hsl(180,29%,50%)] dark:text-cyan-400 
+           font-bold px-3 py-1 rounded cursor-pointer 
+           hover:bg-[hsl(180,29%,50%)] hover:text-white 
+           dark:hover:bg-cyan-500 dark:hover:text-zinc-950
+           transition-all text-sm;
+  }
+
+  .filter-tag-active {
+    background-color: var(--filter-bg);
+    @apply flex items-center gap-2 text-[hsl(180,29%,50%)] 
+           dark:text-cyan-400 font-bold rounded overflow-hidden;
+  }
+
+  .remove-btn {
+    @apply bg-[hsl(180,29%,50%)] dark:bg-cyan-600 px-2 py-1 
+           hover:bg-[hsl(180,14%,20%)] dark:hover:bg-cyan-400 
+           transition-colors text-white;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  @apply transition-colors duration-300 min-h-screen antialiased;
+}
