@@ -22,7 +22,7 @@ export default function GameRow({ title, games }: { title: string, games: Game[]
               className="group cursor-pointer"
               onClick={() => setSelectedHero(game)}
             >
-              <div className="aspect-[3/4] rounded-xl overflow-hidden mb-3 bg-[#202020]">
+              <div className="aspect-3/4 rounded-xl overflow-hidden mb-3 bg-[#202020]">
                 <img 
                   src={game.image} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 

@@ -41,7 +41,7 @@ const discountList: Game[] = [
   { id: 5, title: "Valorant", category: "Shooter", originalPrice: 900, discount: 10, image: "/valorant.jpg", isFree: false, description: "A 5v5 character-based tactical shooter..." },
   { id: 6, title: "Assassin's Creed", category: "Action", originalPrice: 3499, discount: 10, image: "/game.png", isFree: false, description: "Relive the high-stakes struggle of the Assassins..." },
   { id: 7, title: "Red Dead 2", category: "Action", originalPrice: 3199, discount: 50, image: "/redDead.png", isFree: false, description: "An epic tale of life in America's unforgiving heartland..." },
-  { id: 8, title: "Tomb Raider", category: "Action", originalPrice: 2195, discount: 20, image: "/tombRider.png", isFree: false, description: "Join Lara Croft on her first expedition..." },
+  { id: 8, title: "Tomb Raider", category: "Action", originalPrice: 2195, discount: 20, image: "/TombRider.png", isFree: false, description: "Join Lara Croft on her first expedition..." },
   { id: 9, title: "Cyberpunk", category: "Action", originalPrice: 4000, discount: 50, image: "/cyberpink.png", isFree: false, description: "An open-world, action-adventure story..." }
 ];
 
