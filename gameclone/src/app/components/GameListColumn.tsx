@@ -11,11 +11,11 @@ export default function GameListColumn({ title, games }: ColumnProps) {
   const { setSelectedHero } = useGameStore();
 
   return (
-    <div className="flex-1 w-full max-w-100">
+    <div className="flex-1 w-full max-w-[400px]">
       {/* Column Header */}
       <div className="flex justify-between items-center mb-6 pb-3 border-b border-white/5">
         <h2 className="text-lg font-normal text-white tracking-tight">{title}</h2>
-        <button className="text-[14px] font-normal  border border-white px-3  py-1.5 rounded-md hover:bg-white/10 transition-colors text-white">
+        <button className="text-[14px] font-normal  border border-white px-3 py-1.5 px-3 py-1.5 rounded-md hover:bg-white/10 transition-colors text-white">
           View More
         </button>
       </div>
@@ -29,7 +29,7 @@ export default function GameListColumn({ title, games }: ColumnProps) {
             className="flex items-center gap-4 p-2.5 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group"
           >
             {/* Small Thumbnail Image */}
-            <div className="w-12 h-16 rounded-md overflow-hidden shrink-0 bg-black shadow-md border border-white/5">
+            <div className="w-12 h-16 rounded-md overflow-hidden flex-shrink-0 bg-black shadow-md border border-white/5">
               <img 
                 src={game.image} 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 

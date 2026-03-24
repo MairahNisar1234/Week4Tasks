@@ -11,7 +11,7 @@ export default function DescriptionRow({ games }: { games: Game[] }) {
           className="group cursor-pointer flex flex-col h-full font-poppins"
         >
           {/* Image Section */}
-          <div className="relative aspect-video rounded-xl overflow-hidden mb-4 shadow-lg shrink-0 ">
+          <div className="relative aspect-[16/9] rounded-xl overflow-hidden mb-4 shadow-lg flex-shrink-0 ">
             <img 
               src={game.image} 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
@@ -20,7 +20,7 @@ export default function DescriptionRow({ games }: { games: Game[] }) {
           </div>
 
           {/* 2. Content Section - use flex-grow to push the price to the bottom */}
-          <div className="flex flex-col grow gap-1.5">
+          <div className="flex flex-col flex-grow gap-1.5">
             <h4 className="font-normal text-white text-[18px] group-hover:text-gray-300 transition-colors uppercase">
               {game.title}
             </h4>

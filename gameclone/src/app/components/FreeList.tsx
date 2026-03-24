@@ -9,7 +9,7 @@ export default function FreeGames({ games }: { games: Game[] }) {
         <div className="flex items-center gap-3">
           {/* --- INSERT YOUR ICON HERE --- */}
           <div className="w-6 h-6 flex items-center justify-center">
-             <img src="/bag.png"></img>
+             <img src="assets/bag.png"></img>
           </div>
           
           <h2 className="text-xl font-normal text-white">Free Games</h2>
@@ -23,7 +23,7 @@ export default function FreeGames({ games }: { games: Game[] }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {games.map((game) => (
           <div key={game.id} className="group cursor-pointer">
-            <div className="aspect-3/4 rounded-lg overflow-hidden mb-4 shadow-xl bg-black">
+            <div className="aspect-[3/4] rounded-lg overflow-hidden mb-4 shadow-xl bg-black">
               <img 
                 src={game.image} 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 

@@ -23,14 +23,14 @@ export default function ExploreCatalog() {
 
   return (
     <section className="mb-20 px-4 max-w-7xl mx-auto font-poppins">
-      <div className="bg-linear-to-r from-[#161B22] to-[#0D117] border border-white/5 rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-16 overflow-hidden">
+      <div className="bg-gradient-to-r from-[#0a0a0a] to-[#151515] border border-white/5 rounded-3xl p-10 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-16 overflow-hidden">
         
         {/* Left: The Dynamic Fan Stack */}
-        <div className="flex items-center justify-center min-h-62.5 pl-10">
+        <div className="flex items-center justify-center min-h-[250px] pl-10">
           {images.map((img, index) => (
             <div 
               key={index} 
-              className="w-36 h-48 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 transition-all duration-500 hover:scale-110 hover:-translate-y-6 hover:z-100 hover:rotate-0 cursor-pointer"
+              className="w-36 h-48 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 transition-all duration-500 hover:scale-110 hover:-translate-y-6 hover:z-[100] hover:rotate-0 cursor-pointer"
               style={getCardStyle(index)}
             >
               <img 
